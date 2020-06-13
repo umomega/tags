@@ -121,7 +121,7 @@ class TagsController extends Controller
 
 		return [
 			'message' => __('foundation::general.deleted_translation'),
-			'action' => 'fallback'
+			'fallback' => ['name' => 'tags.edit', 'id' => $tag->id]
 		];
 	}
 
@@ -160,7 +160,7 @@ class TagsController extends Controller
 
 		return [
 			'message' => __('tags::tags.deleted'),
-			'action' => 'index'
+			'redirect' => 'tags.index'
 		];
 	}
 
