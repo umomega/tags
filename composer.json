@@ -1,14 +1,14 @@
 {
 	"name": "umomega/tags",
 	"description": "Tags Scaffold For umΩ Apps",
-	"keywords": ["umomega", "laravel", "tags", "laravel", "php"],
-	"version": "1.0.1",
+	"keywords": ["umomega", "laravel", "tags", "php"],
+	"version": "1.0.2",
 	"license": "MIT",
 	"authors": [
         {
             "name": "Egemen Kızılcan",
             "email": "egemen@umomega.com",
-            "homepage": "http://umomega.com",
+            "homepage": "https://umomega.com",
             "role": "Developer / Designer"
         }
     ],
