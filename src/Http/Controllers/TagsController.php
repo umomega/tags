@@ -113,15 +113,14 @@ class TagsController extends Controller
 	public function destroyTranslation(Tag $tag, $locale)
 	{
 		$name = $tag->getTranslation('name', $locale);
-		$tag->forgetTranslation('name', $locale);
-		$tag->forgetTranslation('slug', $locale);
+		$tag->forgetAllTranslations($locale);
 		$tag->save();
 
 		activity()->withProperties(compact('name'))->log('TagTranslationDestroyed');
 
 		return [
 			'message' => __('foundation::general.deleted_translation'),
-			'fallback' => ['name' => 'tags.edit', 'id' => $tag->id]
+			'fallback' => ['name' => 'tags.edit', 'params' => ['id' => $tag->id]]
 		];
 	}
 
