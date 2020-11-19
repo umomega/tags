@@ -20,7 +20,11 @@ class TagsController extends Controller
 	 */
 	public function index(Request $request)
 	{
-		return Tag::orderBy($request->get('s', 'name') . '->' . app()->getLocale(), $request->get('d', 'asc'))->paginate(30);
+		$s = $request->get('s', 'name');
+
+		if($s == 'name') $s .= '->' . app()->getLocale();
+		
+		return Tag::orderBy($s , $request->get('d', 'asc'))->paginate(30);
 	}
 
 	/**
