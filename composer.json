@@ -21,5 +21,12 @@
     	"psr-4": {
     		"Umomega\\Tags\\": "src/"
     	}
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Umomega\\Tags\\Providers\\TagsServiceProvider"
+            ]
+        }
     }
 }
