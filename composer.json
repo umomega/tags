@@ -15,7 +15,7 @@
     "require": {
     	"php": "^7.3|^8.0",
     	"laravel/framework": "^8.0",
-        "spatie/laravel-tags": "^2.6",
+        "spatie/laravel-tags": "^3.0",
         "umomega/foundation": "^1.0"
     },
     "autoload": {
