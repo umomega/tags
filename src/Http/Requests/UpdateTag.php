@@ -16,6 +16,8 @@ class UpdateTag extends FormRequest
         return [
             'name' => 'required|array|min:1',
             'name.*' => 'required|max:255',
+            'slug' => 'nullable|array|min:1',
+            'slug.*' => 'nullable|max:255',
             'type' => 'nullable|max:255'
         ];
     }
