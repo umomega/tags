@@ -2,7 +2,7 @@
 	"name": "umomega/tags",
 	"description": "Tags Scaffold For umΩ Apps",
 	"keywords": ["umomega", "laravel", "tags", "php"],
-	"version": "1.2.0",
+	"version": "1.3.0",
 	"license": "MIT",
 	"authors": [
         {
@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-    	"php": "^8.0",
+    	"php": "^8.2",
     	"laravel/framework": "^9.0",
         "spatie/laravel-tags": "^4.0",
         "umomega/foundation": "^1.0"
